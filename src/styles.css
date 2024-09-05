@@ -11,12 +11,35 @@ header {
     url(/images/raychan-e_J7i3eQEfo-unsplash.jpg);
   color: #a68a6d;
   text-align: center;
-  padding: 300px;
+  padding: 300px 200px;
   height: 200px;
   background-position: center;
   background-size: cover;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+header h3 {
+  font-weight: 300;
+  font-size: 17pt;
+  color: #f5f5dc;
+  margin: 0 0 30px 0;
+}
+
+header a {
+  background: #8b4513;
+  color: #fff5e9;
+  padding: 16px 32px;
+  margin-top: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+header a:hover {
+  background: #a68a6d;
+  color: #fff5e9;
 }
 
 main {
@@ -29,13 +52,6 @@ main img {
   width: 100%;
   display: block;
   margin: 20px auto;
-}
-
-main h3 {
-  font-weight: 300;
-  font-size: 17pt;
-  color: #f5f5dc;
-  margin: 0 0 30px 0;
 }
 
 section {
@@ -184,3 +200,78 @@ td {
 /* .primary-section h3 {
   font-size: 20pt;
 } */
+
+@media (max-width: 1280px) {
+  header {
+    padding: 200px 0;
+  }
+
+  header h1 {
+    font-size: 35pt;
+  }
+
+  header h3 {
+    font-size: 14pt;
+  }
+
+  header a {
+    font-size: 11pt;
+    padding: 13px 20px;
+  }
+
+  main img {
+    width: 70%;
+    margin: 20px auto;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 120px 0;
+    height: 150px;
+  }
+  header h1 {
+    font-size: 28pt;
+  }
+
+  header h3 {
+    font-size: 10pt;
+  }
+
+  header a {
+    font-size: 10pt;
+    padding: 12px 18px;
+  }
+
+  h2 {
+    font-size: 10pt;
+  }
+
+  h4 {
+    font-size: 12pt;
+  }
+
+  section {
+    padding: 60px;
+  }
+
+  section h3 {
+    font-size: 20pt;
+  }
+
+  /* iframe {
+    grid-template-columns: 1fr;
+  } */
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .cards img {
+    margin: 30px auto;
+  }
+}
