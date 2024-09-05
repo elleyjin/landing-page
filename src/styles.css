@@ -270,8 +270,16 @@ footer p {
   }
 
   main img {
-    width: 70%;
+    /* width: 100%; */
     margin: 20px auto;
+  }
+
+  section.primary-section {
+    padding: 30px;
+  }
+
+  table {
+    font-size: 10.5pt;
   }
 
   .grid-2-columns {
@@ -311,6 +319,32 @@ footer p {
 
   section h3 {
     font-size: 20pt;
+  }
+
+  section.primary-section {
+    padding: 30px;
+  }
+
+  table {
+    font-size: 10.5pt;
+  }
+
+  footer h3 {
+    font-size: 13pt;
+    /* padding: 15px 0; */
+  }
+
+  footer li {
+    font-size: 10pt;
+  }
+
+  footer p {
+    font-size: 10pt;
+  }
+
+  .footer-grid {
+    padding: 30px;
+    grid-template-columns: 1fr;
   }
 
   .grid-2-columns {
