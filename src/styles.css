@@ -14,7 +14,7 @@ header {
   height: 200px;
   background-position: center;
   background-size: cover;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -285,6 +285,10 @@ footer p {
 }
 
 @media (max-width: 960px) {
+  main {
+    width: 90%;
+  }
+
   header {
     padding: 120px 0;
     height: 150px;
