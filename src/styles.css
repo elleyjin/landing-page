@@ -337,7 +337,15 @@ footer .credits {
     font-size: 8pt;
   }
 
+  footer .credits {
+    margin: 0 15px;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    padding: 30px;
   }
 }
