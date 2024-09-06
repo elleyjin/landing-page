@@ -22,14 +22,13 @@ header h3 {
   font-weight: 300;
   font-size: 17pt;
   color: #ffffff;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 }
 
 header a {
   background: #f5eaf3;
   color: #a0798c;
   padding: 16px 32px;
-  margin-top: 50px;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 700;
@@ -39,11 +38,6 @@ header a {
 header a:hover {
   background: #a0798c;
   color: #f5eaf3;
-}
-
-main {
-  width: 70%;
-  margin: 0 auto;
 }
 
 section {
@@ -136,6 +130,11 @@ footer p {
   opacity: 0.8;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .img-responsive {
   max-width: 100%;
   display: block;
@@ -156,7 +155,6 @@ footer p {
 .grid {
   display: grid;
   gap: 15px;
-  width: 100%;
 }
 
 .grid-2-columns {
@@ -169,12 +167,6 @@ footer p {
 }
 
 .grid-3-col-embed {
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.card-container {
-  margin-top: 20px;
-  text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -234,7 +226,6 @@ footer p {
 
 .embed {
   width: 100%;
-  aspect-ratio: 16/9;
 }
 
 .credits {
@@ -243,6 +234,14 @@ footer p {
   color: #f5f5dc;
   opacity: 0.5;
   margin: 20px;
+}
+
+.credits a:visited {
+  color: #f5f5dc;
+}
+
+footer .credits {
+  margin-right: 120px;
 }
 
 @media (max-width: 1280px) {
@@ -267,6 +266,10 @@ footer p {
     margin: 20px auto;
   }
 
+  section {
+    padding: 30px;
+  }
+
   section.primary-section {
     padding: 30px;
   }
@@ -274,22 +277,9 @@ footer p {
   table {
     font-size: 10.5pt;
   }
-
-  .grid-3-col-embed {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 960px) {
-  main {
-    width: 100%;
-    padding: 0 10px;
-  }
-
   header {
     padding: 120px 0;
     height: 150px;
@@ -319,10 +309,6 @@ footer p {
     font-size: 12pt;
   }
 
-  section {
-    padding: 60px;
-  }
-
   section h3 {
     font-size: 17pt;
   }
@@ -333,10 +319,6 @@ footer p {
 
   table {
     font-size: 9pt;
-  }
-
-  card {
-    width: 100%;
   }
 
   footer h3 {
@@ -355,17 +337,7 @@ footer p {
     font-size: 8pt;
   }
 
-  .footer-grid {
-    padding: 30px;
+  .grid {
     grid-template-columns: 1fr;
-  }
-
-  .grid-2-columns {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-3-col {
-    grid-template-columns: 1fr;
-    gap: 20px;
   }
 }
